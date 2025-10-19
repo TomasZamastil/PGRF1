@@ -1,7 +1,7 @@
 package rasterize;
 
 public class ShiftedLineRasterizer extends LineRasterizer {
-//To, že by šlo tuto třídu implementovat s logikou pro úhly zde a pak pouze zavolat už existující LineRasterizerTrivial mě napadlo až po této implementaci
+    //To, že by šlo tuto třídu implementovat s logikou pro úhly zde a pak pouze zavolat už existující LineRasterizerTrivial mě napadlo až po této implementaci
     public ShiftedLineRasterizer(RasterBufferedImage raster) {
         super(raster);
     }
@@ -31,9 +31,12 @@ public class ShiftedLineRasterizer extends LineRasterizer {
         }
 
         if (x1 > x2) {
-            int tmpX = x1; int tmpY = y1;
-            x1 = x2; y1 = y2;
-            x2 = tmpX; y2 = tmpY;
+            int tmpX = x1;
+            int tmpY = y1;
+            x1 = x2;
+            y1 = y2;
+            x2 = tmpX;
+            y2 = tmpY;
         }
 
         float k = (float) (y2 - y1) / (x2 - x1);

@@ -60,7 +60,8 @@ public class Controller2D {
                         int nx = x, ny = y;
                         if (sh) {
                             int[] s = snap(firstPoint.getX(), firstPoint.getY(), x, y);
-                            nx = s[0]; ny = s[1];
+                            nx = s[0];
+                            ny = s[1];
                         }
                         lines.add(new Line(firstPoint, new Point(nx, ny)));
                         lineShiftFlags.add(sh);
@@ -80,7 +81,8 @@ public class Controller2D {
                         int nx = x, ny = y;
                         if (e.isShiftDown()) {
                             int[] s = snap(last.getX(), last.getY(), x, y);
-                            nx = s[0]; ny = s[1];
+                            nx = s[0];
+                            ny = s[1];
                         }
                         buildingPolygon.add(new Point(nx, ny));
                     }
@@ -102,7 +104,8 @@ public class Controller2D {
                     int nx = x, ny = y;
                     if (sh) {
                         int[] s = snap(firstPoint.getX(), firstPoint.getY(), x, y);
-                        nx = s[0]; ny = s[1];
+                        nx = s[0];
+                        ny = s[1];
                     }
 
                     if (gradientNEnabled) {
@@ -123,7 +126,8 @@ public class Controller2D {
                     int nx = x, ny = y;
                     if (e.isShiftDown()) {
                         int[] s = snap(last.getX(), last.getY(), x, y);
-                        nx = s[0]; ny = s[1];
+                        nx = s[0];
+                        ny = s[1];
                     }
                     lineRasterizer.rasterize(last.getX(), last.getY(), nx, ny);
                     panel.repaint();

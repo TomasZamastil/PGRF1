@@ -43,6 +43,6 @@ public class RasterBufferedImage implements Raster {
     @Override
     public void clear() {
         Graphics graphics = image.getGraphics();
-        graphics.clearRect(0,0, image.getWidth(), image.getHeight());
+        graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
     }
 }
