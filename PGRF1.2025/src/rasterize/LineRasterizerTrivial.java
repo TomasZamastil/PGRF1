@@ -2,6 +2,7 @@ package rasterize;
 
 public class LineRasterizerTrivial extends LineRasterizer {
 
+   //Implementace algoritmu rasterizace
     public LineRasterizerTrivial(RasterBufferedImage raster) {
         super(raster);
     }

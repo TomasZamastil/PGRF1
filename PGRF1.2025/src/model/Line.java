@@ -17,7 +17,7 @@ public class Line {
     public Line(Point p1, Point p2) {
         this.x1 = p1.getX();
         this.x2 = p2.getX();
-        this.y1 = p1.getX();
+        this.y1 = p1.getY();
         this.y2 = p2.getY();
     }
 
