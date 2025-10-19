@@ -195,6 +195,7 @@ public class Controller2D {
     private int[] snap(int x1, int y1, int x2, int y2) {
         int dx = x2 - x1, dy = y2 - y1;
         double a = Math.toDegrees(Math.atan2(Math.abs(dy), Math.abs(dx)));
+        //pak ještě zjisti proč to nešlo s těma radianama a přepiš to na ně zpátky, protože tohle je hrozně implementovaný
         if (a < 22.5) return new int[]{x2, y1};
         if (a < 67.5) return new int[]{x2, y1 + Integer.signum(dy == 0 ? 1 : dy) * Math.abs(dx)};
         if (a < 112.5) return new int[]{x1, y2};

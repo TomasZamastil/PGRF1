@@ -20,9 +20,7 @@ public class LineRasterizerColorTransition {
         float[] comp1 = c1.getRGBColorComponents(null);
         float[] comp2 = c2.getRGBColorComponents(null);
 
-        // určím, která osa je dominantní – podle ní budu krokovat
         if (Math.abs(dx) >= Math.abs(dy)) {
-            // krokování po X (vodorovné a mírně šikmé úsečky)
             int sx = (x2 >= x1) ? 1 : -1;
             int steps = Math.abs(dx);
             if (steps == 0) {
@@ -43,7 +41,6 @@ public class LineRasterizerColorTransition {
             }
 
         } else {
-            // krokování po Y (svislé a strmé úsečky)
             int sy = (y2 >= y1) ? 1 : -1;
             int steps = Math.abs(dy);
             if (steps == 0) {

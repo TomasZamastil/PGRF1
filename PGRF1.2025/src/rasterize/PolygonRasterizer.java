@@ -27,8 +27,4 @@ public class PolygonRasterizer {
             lineRasterizer.rasterize(last.getX(), last.getY(), first.getX(), first.getY());
         }
     }
-
-    public void setLineRasterizer(LineRasterizer lineRasterizer) {
-        this.lineRasterizer = lineRasterizer;
-    }
 }
