@@ -88,7 +88,6 @@ public class Controller2D {
                 }
             }
         });
-
         panel.addMouseMotionListener(new MouseAdapter() {
             @Override
             public void mouseMoved(MouseEvent e) {
